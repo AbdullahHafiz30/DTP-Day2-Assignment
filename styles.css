@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+    border-radius: 0.5rem;
+}
+
+.box{
+    height: 30%;
+    width: 30%;
+    color: aliceblue;
+    text-align: center;
+    background-color: #3498db;
+    margin: 2%;
+    border-radius: 0.5rem;
+}
